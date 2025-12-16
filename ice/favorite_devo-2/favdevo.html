@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favorite BYU-I Devotionals</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Favorite BYU-Idaho Devotionals</h1>
+  </header>
+
+  <main>
+    <div class="content-box">
+      <h2>Devotional Favorites</h2>
+
+      <!-- Table of Favorites -->
+      <table>
+        <thead>
+          <tr>
+            <th>Speaker</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>President Henry J. Eyring</td>
+            <td>Becoming a Disciple</td>
+            <td>BYU-Idaho Center</td>
+            <td>2019</td>
+          </tr>
+          <tr>
+            <td>Sister Bonnie H. Cordon</td>
+            <td>Trust in the Lord</td>
+            <td>BYU-Idaho Center</td>
+            <td>2020</td>
+          </tr>
+          <tr>
+            <td>Elder Jeffrey R. Holland</td>
+            <td>Remember Lot’s Wife</td>
+            <td>BYU-Idaho Center</td>
+            <td>2021</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Form to Add More -->
+      <h2>Add Another Devotional</h2>
+      <form>
+        <label for="speaker">Speaker:</label>
+        <input type="text" id="speaker" name="speaker" placeholder="Enter speaker name" required />
+
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" placeholder="Enter devotional title" required />
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter location" required />
+
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" placeholder="Enter year" required />
+
+        <button type="submit">Submit Devotional</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Favorite BYU-I Devotionals</p>
+  </footer>
+</body>
+</html>

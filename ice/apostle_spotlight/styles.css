@@ -1,0 +1,100 @@
+/* ===========================
+   Page Base Styles
+=========================== */
+body {
+    background-color: #e8ecec;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+  }
+  
+  /* ===========================
+     Main Container
+  =========================== */
+  .container {
+    background-image: url("images/christus.webp");
+    background-size: cover;
+    background-position: center;
+    margin: 2em auto;
+    padding: 2em 1em;
+    border-radius: 20px;
+    max-width: 900px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* ===========================
+     Titles
+  =========================== */
+  header h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  header h2 {
+    margin-top: 1.5em;
+    font-size: 1.4em;
+    font-weight: normal;
+  }
+  
+  /* ===========================
+     First Presidency
+  =========================== */
+  .first-presidency {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    margin-top: 1em;
+  }
+  
+  .first-presidency img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .first-presidency img:hover {
+    border-color: #ffd700;
+    transform: scale(1.05);
+  }
+  
+  /* ===========================
+     Apostles Grid
+  =========================== */
+  .apostles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5em;
+    justify-items: center;
+    margin-top: 1em;
+  }
+  
+  .apostles-grid img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .apostles-grid img:hover {
+    border-color: #ffd700;
+    transform: scale(1.05);
+  }
+  
+  /* ===========================
+     Footer
+  =========================== */
+  footer {
+    text-align: center;
+    color: #333;
+    font-size: 0.9em;
+    padding: 1em 0;
+  }
+  

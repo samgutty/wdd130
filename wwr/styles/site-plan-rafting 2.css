@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --primary-color: #396E94;
+  --secondary-color: #E7C24F;
+  --accent1-color: #A42212;
+  --accent2-color: #FFFFFF;
+
+  --heading-font: "IM Fell French Canon";
+  --paragraph-font: Lato, Helvetica, sans-serif;
+
+  --headline-color-on-white: #396E94;
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: #396E94;
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: #396E94;
+
+  --nav-link-color: #396E94;
+  --nav-background-color: #E7C24F;
+  --nav-hover-link-color: #FFFFFF;
+  --nav-hover-background-color: #396E94;
+}
+
+/* Simple Reset */
+body {
+  background-color: #fcfbfb;
+  font-family: var(--paragraph-font);
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* Headlines */
+.home-title,
+.msg h2 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+/* Message section */
+.msg {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+  line-height: 1.5em;
+  padding: 35px;
+}
+
+.msg p {
+  font-size: 0.8em;
+  padding-bottom: 15px;
+}
+
+/* Navigation */
+nav {
+  /* optional: background for the whole nav */
+  background-color: var(--nav-background-color);
+}
+nav a {
+  text-decoration: none;
+  color: var(--nav-link-color);
+  text-align: center;
+  padding: 35px;
+  display: inline-block; /* helps padding apply consistently */
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+/* Buttons */
+.book, .join {
+  background-color: #d9c2a3;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+/* Spacing helpers */
+#logo_link { padding-top: 5px; }
+.icon { padding-top: 10px; }
+.rivers-card, .camping-card, .rapids-card { margin: 200px 0; }
+
+/* Card & image styles */
+.card-img { border: 10px solid var(--primary-color); }
+main section img { box-sizing: border-box; }
+
+/* Footer */
+footer {
+  padding: 25px 50px;
+  margin-top: 200px;
+}
+footer .social img { padding-top: 15px; }

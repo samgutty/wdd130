@@ -1,0 +1,194 @@
+/* =========================
+   EXERCISE 1
+   Two-column grid with spacing
+========================= */
+.content1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 20px;
+}
+
+.red1, .blue1 {
+  width: 100%;
+  height: 100px;
+}
+
+.red1 { background-color: red; grid-column: 1 / 3; }
+.blue1 { background-color: blue; grid-column: 1 / 3; }
+
+.green1, .yellow1 {
+  width: 200px;
+  height: 200px;
+}
+
+.green1 { background-color: green; }
+.yellow1 { background-color: yellow; }
+
+/* =========================
+ EXERCISE 2
+ Three-column grid
+========================= */
+.content2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px;
+  gap: 15px;
+  justify-items: center;
+}
+
+.red2 {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 4; /* span all columns */
+}
+
+.green2 {
+  background-color: green;
+  width: 120px;
+  height: 120px;
+}
+
+.blue2 {
+  background-color: blue;
+  width: 120px;
+  height: 120px;
+  grid-column: 3 / 4;
+}
+
+/* =========================
+ EXERCISE 3
+ Four-column, two-row grid
+========================= */
+.content3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 120px 120px;
+  gap: 10px;
+}
+
+.red3 {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 3;
+}
+
+.green3 {
+  background-color: green;
+  width: 100%;
+  height: 100%;
+}
+
+.blue3 {
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+  grid-column: 4 / 5;
+}
+
+/* =========================
+ EXERCISE 4
+ 3x3 grid pattern
+========================= */
+.content4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 15px;
+}
+
+.red4 {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 4; /* top row full width */
+}
+
+.green4 {
+  background-color: green;
+  width: 100%;
+  height: 100%;
+}
+
+.blue4 {
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+  grid-column: 2 / 3;
+}
+
+/* =========================
+ EXERCISE 5
+ Overlapping / layered boxes
+========================= */
+.content5 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 150px 150px;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.red5 {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 4;
+}
+
+.green5 {
+  background-color: green;
+  width: 150px;
+  height: 150px;
+  grid-column: 2 / 3;
+}
+
+.blue5 {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+/* =========================
+ EXERCISE 6
+ Two-column, four-row grid
+========================= */
+.content6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 100px);
+  gap: 15px;
+  justify-items: center;
+}
+
+.red6 {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 3; /* top row full width */
+}
+
+.green6 {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+
+.blue6 {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  grid-column: 2 / 3;
+}
+
+.yellow6 {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  grid-column: 1 / 2;
+}
